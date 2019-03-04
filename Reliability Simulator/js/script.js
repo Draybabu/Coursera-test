@@ -1,4 +1,3 @@
-<script language="JavaScript">
 
 function InputParameter()
 {
