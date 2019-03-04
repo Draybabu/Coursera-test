@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=deivce-width, initial-scale-1">
+	<title text-align:center;>Reliability Simulator</title>
+	<script src="js/script.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<h1 id="myHeader">Reliability Simulator</h1>
+<div class="box">
+   <form class="myBody">
+    	<select id="CalcBasis" onchange="InputParameter()" style="float: centre; font-size: 1em; margin-left:15px;"><span>*</span>
+		<option value=""> Make a selection</option>
+		<option value="YEO for given achievable reliability"> YEO for given achievable reliability</option>
+		<option value="Required Reliability for specific YEO"> Required Reliability for specific YEO</option>
+     	</select><br>
+<p>Date <input type="date" id="Year" value=""><span>*</span><br></p>
+  	<p>Reliability YTD<input type="number" id="rel_ytd" min="90" max="100" step="0.1" value=""><span>*</span><br></p>
+  	<p> <span id="reliab" style=color:black;>Make a selection above</span><input type="number" id="rel" min="90" max="100" step="0.1" value=""><span>*</span><br></p>
+  	<p>Result <input type="text" id="Result" value="" readonly="true"><br></p>    
+<p><input type="button" value="Calculate" onclick="Calculate()" /></p> 
+<br><br>
+
+</form>
+
+</div>
+</body>
+</html>
