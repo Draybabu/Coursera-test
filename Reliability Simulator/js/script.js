@@ -51,4 +51,3 @@ else if(document.getElementById("CalcBasis").value == "YEO for given achievable 
 	}
 }
 
-</script>
